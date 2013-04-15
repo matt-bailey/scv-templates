@@ -19,9 +19,9 @@
 
             <div class="footer-col-3">
                 <ul class="social-links">
-                    <li><a href="#"><i class="entypo-social-c-facebook entypo-orange"></i> Find us on Facebook</a></li>
-                    <li><a href="#"><i class="entypo-social-c-twitter entypo-orange"></i> Follow us on Twitter</a></li>
-                    <li><a href="#"><i class="sprite-youtube"></i> Watch our YouTube Channel</a></li>
+                    <li><a href="#"><span class="ss-icon ss-social-circle ss-social-large icon-orange">facebook</span> Find us on Facebook</a></li>
+                    <li><a href="#"><span class="ss-icon ss-social-circle ss-social-large icon-orange">twitter</span> Follow us on Twitter</a></li>
+                    <li><a href="#"><span class="ss-icon ss-social-circle ss-social-large icon-orange">youtube</span> Watch our YouTube Channel</a></li>
                 </ul>
             </div><!-- .footer-col-3 -->
 

@@ -3,22 +3,19 @@
 <div class="row">
 
     <div class="span4 callout">
-        <i class="icon-truck icon-circular"></i>
-        <h3>Huge range</h3>
+        <h3><i class="icon-truck icon-large icon-orange"></i>Huge range</h3>
         <p>We have the largest range of Small, Medium and Large Vans, Minibuses, Lutons and Tippers for Hire to cover any job with prices starting from as little as <strong>£17 per day</strong> and flexible long term hire from only <strong>£299 or less</strong>!</p>
         <a class="btn" href="#">Read More</a>
     </div><!-- .callout -->
 
     <div class="span4 callout">
-        <i class="icon-user icon-circular"></i>
-        <h3>Efficient Service</h3>
+        <h3><i class="icon-user icon-large icon-orange"></i>Efficient Service</h3>
         <p>Friendly efficient service, open <strong>7 days a week</strong> with single day hire available at weekends, great cheap prices and <strong>instant availability</strong>.</p>
         <a class="btn" href="#">Read More</a>
     </div><!-- .callout -->
 
     <div class="span4 callout">
-        <i class="icon-thumbs-up icon-circular"></i>
-        <h3>Trailers Available</h3>
+        <h3><i class="icon-thumbs-up icon-large icon-orange"></i>Trailers Available</h3>
         <p><strong>We Now Hire Car Trailers</strong><br>
             Call now, or <a href="#">book online</a>.</p>
         <a class="btn" href="#">Read More</a>

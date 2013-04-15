@@ -21,6 +21,9 @@ $page = $_GET['page'];
     <!-- The css files are compiled using LESS: http://lesscss.org/ -->
     <!-- NOTE - do not edit the css files directly! -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="css/font-awesome-ie7.css">
+    <![endif]-->
     <link rel="stylesheet" href="css/styles.css">
 
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>

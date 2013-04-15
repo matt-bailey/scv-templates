@@ -16,6 +16,7 @@
 /* Circular icons
    ========================================================================== */
 
+/* This does not work very well... */
 .icon-circular {
     position: relative;
     z-index: 2;
@@ -33,6 +34,46 @@
         content: "";
     }
 }
+
+/* Colours
+   ========================================================================== */
+
+.icon-white,
+.icon-white:before { color: @white; }
+.icon-black,
+.icon-black:before { color: @black; }
+.icon-orange,
+.icon-orange:before { color: @orange; }
+
+/* Callout headings
+   ========================================================================== */
+
+.callout {
+    [class^="icon-"],
+    [class*=" icon-"] {
+        margin-left: -@baseLineHeight * 2.25;
+        padding-right: @baseLineHeight * 1.25;
+    }
+}
+
+/* Heading phone numbers
+   ========================================================================== */
+
+.phone-number {
+    [class^="icon-"],
+    [class*=" icon-"] {
+        padding-right: @baseLineHeight / 2;
+    }
+}
+
+/* ss-social
+   ========================================================================== */
+
+.ss-social-large {
+    vertical-align: -20%;
+    font-size: 4/2em;
+}
+
 
 /* Sprites
    ========================================================================== */

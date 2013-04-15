@@ -27,7 +27,8 @@
             <div class="header-bottom-inner">
 
                 <div class="phone-numbers">
-                    <span class="phone-number landline"><i class="entypo-phone entypo-large entypo-orange"></i>01793 509 311</span>
+                    <!-- <span class="phone-number landline"><i class="entypo-phone entypo-large entypo-orange"></i>01793 509 311</span> -->
+                    <span class="phone-number landline"><i class="icon-phone icon-orange"></i>01793 509 311</span>
                 </div><!-- .phone-numbers -->
 
                 <div class="navbar">

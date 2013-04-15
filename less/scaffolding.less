@@ -35,9 +35,13 @@ body {
 #header {
     position: relative;
     z-index: 2;
+    display: block;
+    width: 100%;
     text-align: center;
 }
 .header-top-wrapper {
+    display: block;
+    width: 100%;
     #gradient > .vertical(@btnPrimaryBackground, @btnPrimaryBackgroundHighlight);
     .header-top {
         position: relative;
@@ -48,6 +52,8 @@ body {
     }
 }
 .header-bottom-wrapper {
+    display: block;
+    width: 100%;
     #gradient > .vertical(@btnInverseBackgroundHighlight, @btnInverseBackground);
     .box-shadow-multiple(0 2px 8px 0 rgba(0,0,0,0.5), inset 0 4px 8px -2px rgba(0,0,0,1.0));
     .header-bottom {
@@ -173,9 +179,13 @@ img.pull-left { margin: 0 @baseLineHeight @baseLineHeight 0; }
 #footer {
     position: relative;
     z-index: 2;
+    display: block;
+    width: 100%;
     text-align: center;
 }
 .footer-top-wrapper {
+    display: block;
+    width: 100%;
     padding: 20px 20px 0;
     #gradient > .vertical(@btnInverseBackground, @btnInverseBackgroundHighlight);
     .box-shadow(0 -2px 8px 0 rgba(0,0,0,0.5));
@@ -188,6 +198,8 @@ img.pull-left { margin: 0 @baseLineHeight @baseLineHeight 0; }
     }
 }
 .footer-bottom-wrapper {
+    display: block;
+    width: 100%;
     background-color: @btnInverseBackgroundHighlight;
     .footer-bottom {
         position: relative;
@@ -229,7 +241,7 @@ img.pull-left { margin: 0 @baseLineHeight @baseLineHeight 0; }
         list-style: none;
         margin: 0;
         li {
-            margin-bottom: @baseLineHeight / 1.5;
+            margin-bottom: 0;
             a {
                 text-decoration: none;
                 color: @white;

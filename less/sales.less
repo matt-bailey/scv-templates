@@ -1,0 +1,61 @@
+/**
+ * Sales
+ *
+ * Styles for the Sales pages
+ */
+
+
+/* ==========================================================================
+   Search Results
+   ========================================================================== */
+
+.search-results {}
+
+.product-summary-wrapper {
+    .clearfix;
+    padding-bottom: @baseLineHeight * 1.5;
+    margin-bottom: @baseLineHeight * 1.5;
+    border-bottom: 1px solid @hrBorder;
+    &:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+}
+
+.product-info {
+    h3 { margin-bottom: @baseLineHeight / 2; }
+    p { margin-bottom: @baseLineHeight / 1.75; }
+    ul {
+        margin: 0 0 @baseLineHeight / 2;
+        list-style: none;
+    }
+}
+
+.price {
+    color: @orange;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product-img {}
+
+
+/* ==========================================================================
+   Details
+   ========================================================================== */
+
+.product-details {
+    margin-bottom: @baseLineHeight * 2;
+    .product-main {
+        ul {
+            margin: 0 0 @baseLineHeight;
+            list-style: none;
+        }
+        .btn { min-width: 140px; }
+    }
+    .product-collateral {
+        ul {
+            margin-left: @baseLineHeight;
+        }
+    }
+}

@@ -1,0 +1,99 @@
+/**
+ * Type
+ *
+ * These styles override and extend the default Bootstrap type styles
+ */
+
+
+/* ==========================================================================
+   Body text
+   ========================================================================== */
+
+p { margin: 0 0 @baseLineHeight; }
+.lead {
+    margin-bottom: @baseLineHeight;
+    font-size: @baseFontSize * 1.5;
+    //font-weight: bold;
+    line-height: @baseLineHeight * 1.5;
+}
+
+/* ==========================================================================
+   Headings
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 @baseLineHeight 0;
+    font-family: @headingsFontFamily;
+    font-weight: @headingsFontWeight;
+    line-height: 1;
+    color: @headingsColor;
+    text-rendering: optimizelegibility; // Fix the character spacing for headings
+    small {
+        font-weight: normal;
+        line-height: 1;
+        color: @grayLight;
+    }
+}
+h1, .h1 {
+    font-size: 30px;
+    line-height: 36px;
+}
+h2, .h2 {
+    font-size: 24px;
+    line-height: 30px;
+}
+h3, .h3 {
+    font-size: 18px;
+    line-height: 24px;
+}
+h4, .h4 {
+    font-size: 16px;
+    line-height: 20px;
+}
+h5, .h5 {
+    font-size: 14px;
+    line-height: 18px;
+}
+h6, .h6 {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+h1 small { font-size: 24px; }
+h2 small { font-size: 18px; }
+h3 small { font-size: 14px; }
+h4 small { font-size: 14px; }
+
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+// Unordered and Ordered lists
+ul, ol {
+    padding: 0;
+    margin: 0 0 @baseLineHeight @baseLineHeight * 2;
+    list-style: disc;
+}
+
+
+/* ==========================================================================
+   Misc
+   ========================================================================== */
+
+// Colours
+.colour-white { color: @white !important; }
+.colour-orange { color: @orange !important; }
+
+// Horizontal rules
+hr.lrg-divider {
+    margin-top: @baseLineHeight / 2;
+    margin-bottom: @baseLineHeight * 1.5;
+    border-top: 5px solid @black;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+.txt-larger { font-size: larger; }
+.txt-smaller { font-size: smaller; }

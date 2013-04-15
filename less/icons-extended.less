@@ -1,0 +1,60 @@
+/**
+ * Extended icon styles
+ */
+
+
+/* Base overrides
+   ========================================================================== */
+
+.btn {
+    i[class*="right"] {
+        margin-right: 0 !important;
+        margin-left: 5px !important;
+    }
+}
+
+/* Circular icons
+   ========================================================================== */
+
+.icon-circular {
+    position: relative;
+    z-index: 2;
+    color: @white;
+    &:after {
+        position: absolute;
+        top: -8px;
+        left: -9px;
+        z-index: -1;
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-color: @orange;
+        .border-radius(50%);
+        content: "";
+    }
+}
+
+/* Sprites
+   ========================================================================== */
+
+// Common
+[class^="sprite-"] {
+    position: relative;
+    display: inline-block;
+    .ie7-inline-block;
+    width: 1.25em;
+    height: 1.25em;
+}
+[class^="sprite-"]:before,
+[class*=" sprite-"]:before {
+    position: absolute;
+    top: -3px;
+    right: 5px;
+    display: block;
+    width: 28px;
+    height: 28px;
+    content: "";
+}
+
+// Images
+.sprite-youtube:before { background: url('../images/sprite-youtube.png') no-repeat center center; }

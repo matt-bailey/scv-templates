@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".carousel").carousel({interval:7500,pause:"hover"});$(".carousel-dots, .carousel-thumbs").slideshowPagination();$(".twitter-feed").jtwt({count:3,username:"swindoncv",image_size:0,loader_text:"loading tweets..."});$(".fancybox").fancybox()});

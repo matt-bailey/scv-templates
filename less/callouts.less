@@ -1,0 +1,19 @@
+/**
+ * Callouts
+ */
+
+.callout {
+    position: relative;
+    padding-top: 3px;
+    padding-left: @baseLineHeight * 2.25;
+    margin-bottom: @baseLineHeight;
+    .icon-circular {
+        position: absolute;
+        top: 6px;
+        left: 9px;
+        &:after {
+            top: -6px;
+            left: -9px;
+        }
+    }
+}

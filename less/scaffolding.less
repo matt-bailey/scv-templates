@@ -1,0 +1,265 @@
+/**
+ * Scaffolding
+ *
+ * These styles override and extend the default Bootstrap form styles
+ */
+
+
+/* ==========================================================================
+   Global
+   ========================================================================== */
+
+// Body
+body {
+    margin: 0;
+    background-color: @grayLighter;
+    color: @textColor;
+    font-family: @baseFontFamily;
+    font-size: @baseFontSize;
+    line-height: @baseLineHeight;
+    text-align: center;
+}
+
+/* apply a natural box layout model to all elements */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+#header {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+.header-top-wrapper {
+    #gradient > .vertical(@btnPrimaryBackground, @btnPrimaryBackgroundHighlight);
+    .header-top {
+        position: relative;
+        width: 940px;
+        height: 50px;
+        margin: 0 auto;
+        text-align: left;
+    }
+}
+.header-bottom-wrapper {
+    #gradient > .vertical(@btnInverseBackgroundHighlight, @btnInverseBackground);
+    .box-shadow-multiple(0 2px 8px 0 rgba(0,0,0,0.5), inset 0 4px 8px -2px rgba(0,0,0,1.0));
+    .header-bottom {
+        position: relative;
+        width: 940px;
+        height: 110px;
+        margin: 0 auto;
+        text-align: left;
+        .header-bottom-inner {
+            position: absolute;
+            bottom: 10px;
+            //right: 20px;
+            width: 100%;
+        }
+    }
+}
+
+// Logo
+.header-logo {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    .logo {
+        position: relative;
+        z-index: 9999;
+        display: block;
+        margin-bottom: 15px;
+        img { display: block; }
+    }
+}
+
+// Search
+.header-search {
+    padding-top: 10px;
+    form {
+        position: relative;
+        width: 270px;
+        margin: 0 auto;
+        .icon-search {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            bottom: 0;
+            display: block;
+            width: auto;
+            height: auto;
+            font-size: 18px;
+        }
+    }
+}
+
+// Buttons
+.header-buttons {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    button { margin-left: 5px; }
+}
+
+// Phone numbers
+
+.phone-numbers {
+    text-align: right;
+    margin-bottom: 10px;
+    .phone-number {
+        position: relative;
+        z-index: 9999;
+        margin-right: @baseLineHeight;
+        font-family: "Helvetica-Neue-Light", "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        font-size: 28px;
+        color: @white;
+        text-shadow: 0 1px 4px rgba(0,0,0,1.0);
+        &:last-child { margin-right: 0; }
+        [class^="entypo-"]:before {
+            display: inline-block;
+            .ie7-inline-block;
+            margin-right: 10px;
+            margin-bottom: 3px;
+        }
+    }
+}
+
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+#content {
+    position: relative;
+    z-index: 1;
+}
+.content-wrapper {
+    width: 980px;
+    padding: @baseLineHeight * 1.5 @baseLineHeight 0;
+    margin: 0 auto;
+    background-color: @white;
+    .main {
+        min-height: 360px;
+        text-align: left;
+        > article { margin-bottom: @baseLineHeight * 1.5; }
+    }
+    .secondary { text-align: left; }
+}
+
+// Images
+img.pull-right { margin: 0 0 @baseLineHeight @baseLineHeight; }
+img.pull-left { margin: 0 @baseLineHeight @baseLineHeight 0; }
+
+// Add polaroid-esque trim
+.img-polaroid {
+    padding: 4px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    .box-shadow(0 1px 3px rgba(0,0,0,0.15));
+}
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+#footer {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+.footer-top-wrapper {
+    padding: 20px 20px 0;
+    #gradient > .vertical(@btnInverseBackground, @btnInverseBackgroundHighlight);
+    .box-shadow(0 -2px 8px 0 rgba(0,0,0,0.5));
+    .footer-top {
+        position: relative;
+        width: 940px;
+        z-index: 1;
+        margin: 0 auto;
+        text-align: left;
+    }
+}
+.footer-bottom-wrapper {
+    background-color: @btnInverseBackgroundHighlight;
+    .footer-bottom {
+        position: relative;
+        width: 940px;
+        z-index: 2;
+        height: 100px;
+        margin: 0 auto;
+        text-align: left;
+    }
+}
+
+// Columns
+.footer-top {
+    .clearfix;
+    position: relative;
+    .footer-col-1,
+    .footer-col-2,
+    .footer-col-3 {
+        float: left;
+        width: 300px;
+    }
+}
+
+// Footer content styles
+
+#footer { color: @white; }
+
+// Links
+#footer {
+    ul {
+        list-style: none;
+        margin: 0;
+    }
+}
+
+// Social links
+.footer-top {
+    .social-links {
+        list-style: none;
+        margin: 0;
+        li {
+            margin-bottom: @baseLineHeight / 1.5;
+            a {
+                text-decoration: none;
+                color: @white;
+                &:hover {
+                    color: @linkColorHover;
+                    [class^="icon-"] { color: @white; }
+                }
+            }
+        }
+        [class^="entypo-"]:before,
+        [class*=" entypo-"]:before {
+            display: inline-block;
+            .ie7-inline-block;
+            margin-left: -20px;
+            vertical-align: middle;
+            font-size: 4em;
+        }
+    }
+}
+
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+a {
+    color: @linkColor;
+    text-decoration: none;
+}
+a:hover {
+    color: @linkColorHover;
+    text-decoration: underline;
+}

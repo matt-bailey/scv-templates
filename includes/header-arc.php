@@ -16,7 +16,7 @@
             </div><!-- .header-search -->
 
             <div class="header-buttons">
-                <button class="btn btn-primary" href="#"><i class="icon-pencil"></i> Blog</button> <button class="btn btn-primary" href="#"><i class="icon-envelope-alt"></i> Email Us</button>
+                <a class="btn btn-primary" href="#"><i class="icon-pencil"></i> Blog</a> <a class="btn btn-primary" href="#"><i class="icon-envelope-alt"></i> Email Us</a>
             </div><!-- .header-buttons -->
             
         </div>

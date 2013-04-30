@@ -10,7 +10,8 @@
 .carousel {
     position: relative;
     z-index: 2;
-    margin-bottom: @baseLineHeight * 2.5;
+    // margin-bottom: @baseLineHeight * 2.5;
+    margin-bottom: @baseLineHeight;
     background-color: @white;
     // Shadows
     &:before,
@@ -76,7 +77,7 @@
 
 // Base styles
 .carousel-nav {
-    position: absolute;
+    //position: absolute;
     z-index: 1;
     width: 100%;
     list-style: none;
@@ -93,7 +94,7 @@
 
 // With dots
 .carousel-dots {
-    .carousel-nav {
+    + .carousel-nav {
         margin: 10px 0 0;
         text-align: center;
         li { margin-right: 5px; }
@@ -114,13 +115,19 @@
 
 // With thumbnails
 .carousel-thumbs {
-    margin-bottom: @baseLineHeight * 7.5;
-    .carousel-nav {
+    //margin-bottom: @baseLineHeight * 7.5;
+    + .carousel-nav {
         margin: 20px 0 0;
         text-align: left;
-        li { margin-right: 20px; }
+        li {
+            margin-right: 20px;
+            margin-bottom: 20px;
+            &:nth-child(4) { margin-right: 0; }
+        }
         a {
+            .transition(opacity 0.25s ease);
             .opacity(50);
+            &:hover,
             &.active { .opacity(100); }
         }
         img {

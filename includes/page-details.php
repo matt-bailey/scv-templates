@@ -6,8 +6,7 @@
                 <?php include 'slideshow-product.php'; ?>
                 <p><i class="icon-search"></i> Click main image to zoom</p>
                 <div class="callout">
-                    <i class="icon-truck icon-circular"></i>
-                    <h3>Vehicle Description</h3>
+                    <h3><i class="icon-truck icon-orange"></i> Vehicle Description</h3>
                     <p>One owner, Connect, SWB, direct from leasing company and spotless both inside and out. This van looks and drives like a 20,000 mile vehicle. Fully maintained and prepared with new service and 12 month MOT. Great value at this price. White, 99000 miles.</p>
                 </div><!-- .callout -->
             </article><!-- article -->

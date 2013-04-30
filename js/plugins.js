@@ -141,7 +141,7 @@ if (/(MSIE [7-9]\.|Opera.*Version\/(10\.[5-9]|(11|12)\.)|Chrome\/([1-9]|10)\.|Ve
             });
 
             html += '</ul></li>';
-            $(this).append(html);
+            $(this).after(html);
             $('.carousel-control.left[href="#' + $(this).attr('id') + '"]').hide();
 
         }).bind('slid',

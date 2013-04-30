@@ -14,7 +14,8 @@ $page = $_GET['page'];
     <meta name="description" content="Swindon Car &amp; Van">
     <meta name="author" content="Matt Bailey">
     <meta name="Copyright" content="Copyright Swindon Car and Van">
-    <meta name="viewport" content="width=device-width">
+    <!-- Viewport tag for non-repsonsive sites - fixes rendering bug on iOS devices -->
+    <meta name="viewport" content="width=1024">
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 

@@ -1,5 +1,5 @@
-<div id="mainCarousel" class="carousel carousel-dots slide">
-    
+<div id="mainCarousel" class="carousel carousel-fade carousel-dots slide">
+
     <div class="carousel-inner">
 
         <div class="item active">

@@ -51,7 +51,7 @@
             <h3>Our Fleet</h3>
         </div>
         <div class="widget-content">
-            <div id="fleetCarousel" class="carousel slide">
+            <div id="fleetCarousel" class="carousel carousel-fade slide">
                 <div class="carousel-inner">
                     <div class="item active">
                         <img src="images/slide-1.jpg" />

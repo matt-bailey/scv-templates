@@ -37,7 +37,7 @@ $page = $_GET['page'];
     <!-- Load header and page content based on $page query string -->
     <?php include "includes/header-" . "$page" . ".php"; ?>
     <?php include "includes/page-" . "$page" . ".php"; ?>
-    
+
     <?php include 'includes/footer.php'; ?>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>

@@ -1,5 +1,5 @@
-<div id="productCarousel" class="carousel carousel-thumbs slide">
-    
+<div id="productCarousel" class="carousel carousel-fade carousel-thumbs slide">
+
     <div class="carousel-inner">
 
         <div class="item active">

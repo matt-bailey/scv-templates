@@ -27,6 +27,9 @@ $page = $_GET['page'];
     <link rel="stylesheet" href="css/styles.css">
 
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <!--[if (gte IE 6)&(lte IE 8)]>
+    <script type="text/javascript" src="js/vendor/selectivizr-min.js"></script>
+    <![endif]-->
 </head>
 <body>
     <!--[if lt IE 7]>

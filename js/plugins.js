@@ -128,12 +128,12 @@ if (/(MSIE [7-9]\.|Opera.*Version\/(10\.[5-9]|(11|12)\.)|Chrome\/([1-9]|10)\.|Ve
             $(this).find('.item img').each(function (index) {
                 var thumbSrc = $(this).attr('src');
                 if ($('.carousel-dots').length) {
-                    console.log("Dots");
+                    // console.log("Dots");
                     html += '<li><a';
                     if (index === 0) { html += ' class="active"'; }
                     html += ' href="#">•</a></li>';
                 } else if ($('.carousel-thumbs').length) {
-                    console.log("Thumbs");
+                    // console.log("Thumbs");
                     html += '<li><a';
                     if (index === 0) { html += ' class="active"'; }
                     html += ' href="#"><img src="' + thumbSrc + '" /></a></li>';
@@ -149,17 +149,17 @@ if (/(MSIE [7-9]\.|Opera.*Version\/(10\.[5-9]|(11|12)\.)|Chrome\/([1-9]|10)\.|Ve
             function () {
                 nav = $('.carousel-nav[data-target="' + $(this).attr('id') + '"] ul');
                 index = $(this).find('.item.active').index();
-                item = nav.find('li').get(index);
-                currentCaption = $(this).find('.item.active').children('.carousel-caption');
+                selectedItem = nav.find('li').get(index);
+                // currentCaption = $(this).find('.item.active').children('.carousel-caption');
 
                 // Hide caption after timeout
-                $(currentCaption).slideDown(500);
-                setTimeout(function () {
-                    $(currentCaption).slideUp(500);
-                }, 5000);
+                // $(currentCaption).slideDown(500);
+                // setTimeout(function () {
+                //     $(currentCaption).slideUp(500);
+                // }, 5000);
 
                 nav.find('li a.active').removeClass('active');
-                $(item).find('a').addClass('active');
+                $(selectedItem).find('a').addClass('active');
 
                 if (index === 0) {
                     $('.carousel-control.left[href="#' + $(this).attr('id') + '"]').fadeOut();
@@ -268,28 +268,28 @@ if (/(MSIE [7-9]\.|Opera.*Version\/(10\.[5-9]|(11|12)\.)|Chrome\/([1-9]|10)\.|Ve
  * Carousel caption animation
  */
 
-(function ($) {
-    // Hide caption after timeout
-    $('.carousel-caption').slideDown(500);
-    setTimeout(function () {
-        $('.carousel-caption').slideUp(500);
-    }, 5000);
-    // Show/hide caption on mouseenter/mouseleave
-    var timeOne, timeTwo;
-    $('.carousel').on({
-        mouseenter: function () {
-            clearTimeout(timeTwo);
-            timeOne = setTimeout(function () {
-                $('.carousel-caption').stop(true, true).slideDown(500);
-            }, 100);
-        },
-        mouseleave: function () {
-            timeTwo = setTimeout(function () {
-                $('.carousel-caption').slideUp(500);
-            }, 100);
-        }
-    });
-})(jQuery);
+// (function ($) {
+//     // Hide caption after timeout
+//     $('.carousel-caption').slideDown(500);
+//     setTimeout(function () {
+//         $('.carousel-caption').slideUp(500);
+//     }, 5000);
+//     // Show/hide caption on mouseenter/mouseleave
+//     var timeOne, timeTwo;
+//     $('.carousel').on({
+//         mouseenter: function () {
+//             clearTimeout(timeTwo);
+//             timeOne = setTimeout(function () {
+//                 $('.carousel-caption').stop(true, true).slideDown(500);
+//             }, 100);
+//         },
+//         mouseleave: function () {
+//             timeTwo = setTimeout(function () {
+//                 $('.carousel-caption').slideUp(500);
+//             }, 100);
+//         }
+//     });
+// })(jQuery);
 
 
 /**
@@ -298,8 +298,8 @@ if (/(MSIE [7-9]\.|Opera.*Version\/(10\.[5-9]|(11|12)\.)|Chrome\/([1-9]|10)\.|Ve
 
 (function($){
 
-    $.fn.extend({ 
-        
+    $.fn.extend({
+
         //pass the options variable to the function
         jtwt: function(options) {
 
@@ -312,15 +312,15 @@ if (/(MSIE [7-9]\.|Opera.*Version\/(10\.[5-9]|(11|12)\.)|Chrome\/([1-9]|10)\.|Ve
                 convert_links: 1,
                 loader_text: 'loading new tweets'
             }
-                
+
             var options =  $.extend(defaults, options);
 
             return this.each(function() {
                 var o = options;
-                var obj = $(this);  
-                
-            $(obj).append('<ul id="jtwt"></ul>');   
-            $("#jtwt", obj).append('<li id="jtwt_loader" style="display:none;">' + o.loader_text + '</li>');    
+                var obj = $(this);
+
+            $(obj).append('<ul id="jtwt"></ul>');
+            $("#jtwt", obj).append('<li id="jtwt_loader" style="display:none;">' + o.loader_text + '</li>');
             $("#jtwt_loader").fadeIn('slow');
 
             // Modified version of the prettyDate() function. Thanks to http://webdesign.onyou.ch/2010/08/04/javascript-time-ago-pretty-date/
@@ -329,7 +329,7 @@ if (/(MSIE [7-9]\.|Opera.*Version\/(10\.[5-9]|(11|12)\.)|Chrome\/([1-9]|10)\.|Ve
 
                 date_str = date_str.replace(/\+[0-9]{4}/, "");
                 date_str = date_str.substr(4);
-    
+
                 var month = new Array();
                 month["Jan"] = "1";
                 month["Feb"] = "2";
@@ -343,10 +343,10 @@ if (/(MSIE [7-9]\.|Opera.*Version\/(10\.[5-9]|(11|12)\.)|Chrome\/([1-9]|10)\.|Ve
                 month["Oct"] = "10";
                 month["Nov"] = "11";
                 month["Dec"] = "12";
-    
+
                 var date_str_split = date_str.split(" ");
                 date_str = date_str_split[4];
-                
+
                 date_str = date_str_split[4] + "-" + month[date_str_split[0]] + "-" + date_str_split[1] + "T" + date_str_split[2] + "Z";
 
                 var time_formats = [
@@ -372,7 +372,7 @@ if (/(MSIE [7-9]\.|Opera.*Version\/(10\.[5-9]|(11|12)\.)|Chrome\/([1-9]|10)\.|Ve
                     list_choice = 2;
                 }
                 var i = 0, format;
-                while (format = time_formats[i++]) 
+                while (format = time_formats[i++])
                     if (seconds < format[0]) {
                         if (typeof format[2] == 'string')
                             return format[list_choice];
@@ -381,72 +381,72 @@ if (/(MSIE [7-9]\.|Opera.*Version\/(10\.[5-9]|(11|12)\.)|Chrome\/([1-9]|10)\.|Ve
                     }
                 return time;
             };
-    
-            $.getJSON('http://api.twitter.com/1/statuses/user_timeline/' + o.username + '.json?count=' + o.count + '&include_rts=true&callback=?', function(data){ 
 
-            $.each(data, function(i, item) {       
-            
+            $.getJSON('http://api.twitter.com/1/statuses/user_timeline/' + o.username + '.json?count=' + o.count + '&include_rts=true&callback=?', function(data){
+
+            $.each(data, function(i, item) {
+
                 jtweet = '<li class="jtwt_tweet">';
-                
-                
-                
+
+
+
                 if (o.image_size != 0) {
-                
+
                 today = new Date();
-  
+
                 jtweet += '<div class="jtwt_picture">';
                 jtweet += '<a href="http://twitter.com/' + item.user['screen_name'] + '">'
                 jtweet += '<img width="' + o.image_size +'" height="' + o.image_size + '" src="' + item.user['profile_image_url'] + '" />';
                 jtweet += '</a><br />';
                 jtweet += '</div>';
 
-                } 
-                
-                
-               
+                }
+
+
+
                 var tweettext = item.text;
                 var tweetdate = prettyDate(item.created_at);
-                
-                if (o.convert_links != 0) {
-                
 
-  
+                if (o.convert_links != 0) {
+
+
+
                 tweettext = tweettext.replace(/(http\:\/\/[A-Za-z0-9\/\.\?\=\-]*)/g,'<a href="$1">$1</a>');
                 tweettext = tweettext.replace(/@([A-Za-z0-9\/_]*)/g,'<a href="http://twitter.com/$1">@$1</a>');
                 tweettext = tweettext.replace(/#([A-Za-z0-9\/\.]*)/g,'<a href="http://twitter.com/search?q=$1">#$1</a>');
-                
+
                 }
 
 
                 jtweet += '<p class="jtwt_tweet_text">';
                 jtweet += tweettext;
                 jtweet += '</p>';
-               
+
                 jtweet += '<a href="http://twitter.com/' + item.user['screen_name'] + '/statuses/' + item.id + '" class="jtwt_date">';
-                
+
                 jtweet += tweetdate;
                 jtweet += '</a>';
- 
-                jtweet += '</li>';                  
-                
+
+                jtweet += '</li>';
+
                 $("#jtwt", obj).append(jtweet);
-        
-    
 
 
-                 });   
-                 
 
-            $("#jtwt_loader").fadeOut('fast');   
-           
+
+                 });
+
+
+            $("#jtwt_loader").fadeOut('fast');
+
         });
-    
-    
-            
+
+
+
             });
         }
     });
-    
+
 })(jQuery);
 
 

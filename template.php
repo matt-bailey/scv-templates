@@ -25,6 +25,9 @@ $page = $_GET['page'];
     <link rel="stylesheet" href="css/styles.css">
 
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <!--[if (gte IE 6)&(lte IE 8)]>
+    <script type="text/javascript" src="js/vendor/selectivizr-min.js"></script>
+    <![endif]-->
 </head>
 <body>
     <!--[if lt IE 7]>
@@ -37,7 +40,7 @@ $page = $_GET['page'];
     <!-- Load header and page content based on $page query string -->
     <?php include "includes/header-" . "$page" . ".php"; ?>
     <?php include "includes/page-" . "$page" . ".php"; ?>
-    
+
     <?php include 'includes/footer.php'; ?>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>

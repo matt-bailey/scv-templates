@@ -1,5 +1,5 @@
-<div id="productCarousel" class="carousel carousel-thumbs slide">
-    
+<div id="productCarousel" class="carousel carousel-fade carousel-thumbs slide">
+
     <div class="carousel-inner">
 
         <div class="item active">
@@ -41,6 +41,54 @@
         <div class="item">
             <a class="fancybox" href="images/slide-1.jpg">
                 <img src="images/slide-1.jpg" />
+            </a>
+        </div><!-- .item -->
+
+        <div class="item">
+            <a class="fancybox" href="images/slide-2.jpg">
+                <img src="images/slide-2.jpg" />
+            </a>
+        </div><!-- .item -->
+
+        <div class="item">
+            <a class="fancybox" href="images/slide-3.jpg">
+                <img src="images/slide-3.jpg" />
+            </a>
+        </div><!-- .item -->
+
+        <div class="item">
+            <a class="fancybox" href="images/slide-1.jpg">
+                <img src="images/slide-1.jpg" />
+            </a>
+        </div><!-- .item -->
+
+        <div class="item">
+            <a class="fancybox" href="images/slide-2.jpg">
+                <img src="images/slide-2.jpg" />
+            </a>
+        </div><!-- .item -->
+
+        <div class="item">
+            <a class="fancybox" href="images/slide-3.jpg">
+                <img src="images/slide-3.jpg" />
+            </a>
+        </div><!-- .item -->
+
+        <div class="item">
+            <a class="fancybox" href="images/slide-1.jpg">
+                <img src="images/slide-1.jpg" />
+            </a>
+        </div><!-- .item -->
+
+        <div class="item">
+            <a class="fancybox" href="images/slide-2.jpg">
+                <img src="images/slide-2.jpg" />
+            </a>
+        </div><!-- .item -->
+
+        <div class="item">
+            <a class="fancybox" href="images/slide-3.jpg">
+                <img src="images/slide-3.jpg" />
             </a>
         </div><!-- .item -->
 

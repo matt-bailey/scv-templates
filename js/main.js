@@ -18,6 +18,17 @@ $(document).ready(function () {
     });
 
     // Fancybox
-    $(".fancybox").fancybox();
+    $(".fancybox").fancybox({
+        padding: 5,
+        playSpeed: 5000,
+        helpers: {
+            title: {
+                type: 'inside'
+            },
+            buttons: {
+                position: 'bottom'
+            }
+        }
+    });
 
 });

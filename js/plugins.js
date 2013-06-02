@@ -128,12 +128,12 @@ if (/(MSIE [7-9]\.|Opera.*Version\/(10\.[5-9]|(11|12)\.)|Chrome\/([1-9]|10)\.|Ve
             $(this).find('.item img').each(function (index) {
                 var thumbSrc = $(this).attr('src');
                 if ($('.carousel-dots').length) {
-                    console.log("Dots");
+                    // console.log("Dots");
                     html += '<li><a';
                     if (index === 0) { html += ' class="active"'; }
                     html += ' href="#">•</a></li>';
                 } else if ($('.carousel-thumbs').length) {
-                    console.log("Thumbs");
+                    // console.log("Thumbs");
                     html += '<li><a';
                     if (index === 0) { html += ' class="active"'; }
                     html += ' href="#"><img src="' + thumbSrc + '" /></a></li>';
@@ -149,7 +149,7 @@ if (/(MSIE [7-9]\.|Opera.*Version\/(10\.[5-9]|(11|12)\.)|Chrome\/([1-9]|10)\.|Ve
             function () {
                 nav = $('.carousel-nav[data-target="' + $(this).attr('id') + '"] ul');
                 index = $(this).find('.item.active').index();
-                item = nav.find('li').get(index);
+                selectedItem = nav.find('li').get(index);
                 // currentCaption = $(this).find('.item.active').children('.carousel-caption');
 
                 // Hide caption after timeout
@@ -159,7 +159,7 @@ if (/(MSIE [7-9]\.|Opera.*Version\/(10\.[5-9]|(11|12)\.)|Chrome\/([1-9]|10)\.|Ve
                 // }, 5000);
 
                 nav.find('li a.active').removeClass('active');
-                $(item).find('a').addClass('active');
+                $(selectedItem).find('a').addClass('active');
 
                 if (index === 0) {
                     $('.carousel-control.left[href="#' + $(this).attr('id') + '"]').fadeOut();

@@ -164,7 +164,13 @@
 .no-backgroundsize {
     .carousel-thumbs {
         + .carousel-nav {
-            a { -ms-behavior: url(js/vendor/backgroundsize.min.htc); }
+            a {
+                background-position: 0 0;
+                // Local
+                // -ms-behavior: url("/templates/js/vendor/backgroundsize.min.htc");
+                // Live server
+                -ms-behavior: url("/sites/swindoncarandvan.co.uk/themes/scv_rental/js/vendor/backgroundsize.min.htc");
+            }
         }
     }
 }

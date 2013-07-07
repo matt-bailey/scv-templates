@@ -21,20 +21,8 @@
         </div><!-- .item -->
 
         <div class="item">
-            <a class="fancybox" rel="gallery" href="images/slide-1.jpg">
-                <img src="images/slide-1.jpg" />
-            </a>
-        </div><!-- .item -->
-
-        <div class="item">
-            <a class="fancybox" rel="gallery" href="images/slide-2.jpg">
-                <img src="images/slide-2.jpg" />
-            </a>
-        </div><!-- .item -->
-
-        <div class="item">
-            <a class="fancybox" rel="gallery" href="images/slide-3.jpg">
-                <img src="images/slide-3.jpg" />
+            <a class="fancybox" rel="gallery" href="images/slide-4.jpg">
+                <img src="images/slide-4.jpg" />
             </a>
         </div><!-- .item -->
 
@@ -57,20 +45,8 @@
         </div><!-- .item -->
 
         <div class="item">
-            <a class="fancybox" rel="gallery" href="images/slide-1.jpg">
-                <img src="images/slide-1.jpg" />
-            </a>
-        </div><!-- .item -->
-
-        <div class="item">
-            <a class="fancybox" rel="gallery" href="images/slide-2.jpg">
-                <img src="images/slide-2.jpg" />
-            </a>
-        </div><!-- .item -->
-
-        <div class="item">
-            <a class="fancybox" rel="gallery" href="images/slide-3.jpg">
-                <img src="images/slide-3.jpg" />
+            <a class="fancybox" rel="gallery" href="images/slide-4.jpg">
+                <img src="images/slide-4.jpg" />
             </a>
         </div><!-- .item -->
 
@@ -89,6 +65,36 @@
         <div class="item">
             <a class="fancybox" rel="gallery" href="images/slide-3.jpg">
                 <img src="images/slide-3.jpg" />
+            </a>
+        </div><!-- .item -->
+
+        <div class="item">
+            <a class="fancybox" rel="gallery" href="images/slide-4.jpg">
+                <img src="images/slide-4.jpg" />
+            </a>
+        </div><!-- .item -->
+
+        <div class="item">
+            <a class="fancybox" rel="gallery" href="images/slide-1.jpg">
+                <img src="images/slide-1.jpg" />
+            </a>
+        </div><!-- .item -->
+
+        <div class="item">
+            <a class="fancybox" rel="gallery" href="images/slide-2.jpg">
+                <img src="images/slide-2.jpg" />
+            </a>
+        </div><!-- .item -->
+
+        <div class="item">
+            <a class="fancybox" rel="gallery" href="images/slide-3.jpg">
+                <img src="images/slide-3.jpg" />
+            </a>
+        </div><!-- .item -->
+
+        <div class="item">
+            <a class="fancybox" rel="gallery" href="images/slide-4.jpg">
+                <img src="images/slide-4.jpg" />
             </a>
         </div><!-- .item -->
 

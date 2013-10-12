@@ -13,6 +13,10 @@ $(document).ready(function () {
     $(".fancybox").fancybox({
         padding: 5,
         playSpeed: 5000,
+        //openEffect: 'fade',
+        //closeEffect: 'fade',
+        nextEffect: 'fade',
+        prevEffect: 'fade',
         helpers: {
             title: {
                 type: 'inside'

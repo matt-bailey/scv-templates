@@ -217,6 +217,13 @@
         &:before,
         &:after { display: none; }
     }
+    .carousel-inner,
+    .item,
+    // Needed for max-height in FF
+    .item > a {
+        width: 284px;
+        height: 187px;
+    }
     // Prev / next controls
     .carousel-control {
         &.right { right: 5px; }
